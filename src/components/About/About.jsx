@@ -57,10 +57,10 @@ const About = () => {
 
           {/* Resume Button */}
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1ZAvZ41a-SXWnfRP-BL5uiyCUdORkYvUs/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
+            className="inline-block text-white py-3 px-8 mt-5 text-lg rounded-sm font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: "linear-gradient(90deg, #0D1F23, #163A40)",
               boxShadow: "0 0 2px #0D1F23, 0 0 6px #0D1F23, 0 0 40px #0D1F23",

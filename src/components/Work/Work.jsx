@@ -44,13 +44,13 @@ const Work = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.15 }}
             viewport={{ once: true }}
-            className="border border-white bg-[#0D1F23] backdrop-blur-md shadow-2xl overflow-hidden cursor-pointer hover:shadow-[#0D1F23] hover:translate-y-2 transition-transform duration-300"
+            className="border border-white bg-[#0D1F23] rounded-xl backdrop-blur-md shadow-2xl overflow-hidden cursor-pointer hover:shadow-[#0D1F23] hover:translate-y-2 transition-transform duration-300"
           >
             <div className="p-4">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full rounded-t-xl h-48 object-cover"
               />
             </div>
 
@@ -67,7 +67,7 @@ const Work = () => {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-gray-300 text-xs font-semibold text-[#212342] px-2 py-1 mt-2 mr-2 mb-2"
+                    className="inline-block bg-gray-300 text-xs rounded-sm font-semibold text-[#212342] px-2 py-1 mt-2 mr-2 mb-2"
                   >
                     {tag}
                   </span>
@@ -84,13 +84,13 @@ const Work = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className="fixed inset-9 z-50 flex items-center justify-center bg-black/90 p-4"
+          className="fixed inset-9 z-50 flex rounded-xl items-center justify-center bg-black/90 p-4"
         >
           <motion.div
             initial={{ opacity: 0, y: 80, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.4 }}
-            className="bg-gray-900 shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative border border-gray-600"
+            className="bg-gray-900 shadow-2xl lg:w-full w-[90%] rounded-xl max-w-3xl overflow-hidden relative border border-gray-600"
           >
             <div className="flex justify-end p-4">
               <button
@@ -123,7 +123,7 @@ const Work = () => {
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-gray-300 text-xs font-semibold text-[#212342] px-2 py-1 mt-2 mr-2 mb-2"
+                      className="bg-gray-300 text-xs rounded-sm font-semibold text-[#212342] px-2 py-1 mt-2 mr-2 mb-2"
                     >
                       {tag}
                     </span>
@@ -135,7 +135,7 @@ const Work = () => {
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-200 hover:text-[#2E5C7E] text-[#0D1F23] lg:py-2 px-2 py-1 lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 bg-gray-200 hover:text-[#2E5C7E] rounded-xl text-[#0D1F23] lg:py-2 px-2 py-1 lg:text-xl text-sm font-semibold text-center"
                   >
                     View Code
                   </a>
@@ -144,7 +144,7 @@ const Work = () => {
                     href={selectedProject.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-[#2E5C7E] hover:text-gray-400 text-[#0D1F23] lg:py-2 px-2 py-1 lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 bg-[#2E5C7E] hover:text-gray-400 rounded-xl text-[#0D1F23] lg:py-2 px-2 py-1 lg:text-xl text-sm font-semibold text-center"
                   >
                     View Live
                   </a>

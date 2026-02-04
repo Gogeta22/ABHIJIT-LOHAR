@@ -36,7 +36,7 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-row gap-6 bg-[#111827] border border-gray-700 p-6 hover:border-purple-500 transition"
+            className="flex flex-col md:flex-row gap-6 bg-[#111827] rounded-xl border border-gray-700 p-6 hover:border-purple-500 transition"
           >
             {/* Logo */}
             <div className="shrink-0">

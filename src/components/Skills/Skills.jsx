@@ -36,7 +36,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="bg-[#0D1F23] backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 w-full sm:w-[48%] border border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
+            className="bg-[#0D1F23] backdrop-blur-md rounded-xl px-6 sm:px-10 py-8 sm:py-6 w-full sm:w-[48%] border border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
           >
             <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-4 text-center">
               {category.title}
@@ -47,7 +47,7 @@ const Skills = () => {
               {category.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="flex items-center justify-center space-x-1 bg-transparent border-2 border-gray-700 py-2 px-2 sm:px-2 sm:py-2 text-center"
+                  className="flex items-center justify-center space-x-1 rounded-xl bg-transparent border-2 border-gray-700 py-2 px-2 sm:px-2 sm:py-2 text-center"
                 >
                   <img
                     src={skill.logo}

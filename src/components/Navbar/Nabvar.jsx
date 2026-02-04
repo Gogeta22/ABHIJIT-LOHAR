@@ -67,7 +67,7 @@ const Nabvar = () => {
             <FiGithub size={24}/>
           </a>
           <a 
-          href="https:www.linkedin.com/in/abhijeet-lohar-3a1209303/"
+          href="https:www.linkedin.com/in/abhijeet-lohar-3a1209303"
           target='_blank'
           rel="noopener noreferrer"
           className='text-[#0D1F23] hover:text-[#2E5C7E]'
